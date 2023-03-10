@@ -1,5 +1,9 @@
 <?php
 
+/******************************************************************************
+ * Copyright (c) ArChang 2023.                                                *
+ ******************************************************************************/
+
 namespace App\Admin\Controllers;
 
 use Illuminate\Http\Request;
@@ -10,7 +14,7 @@ use Slowlyo\OwlAdmin\Renderers\InputKV;
 use Slowlyo\OwlAdmin\Renderers\TextControl;
 use Slowlyo\OwlAdmin\Controllers\AdminController;
 
-class SettingController extends AdminController
+final class SettingController extends AdminController
 {
     protected string $queryPath = 'system/settings';
 

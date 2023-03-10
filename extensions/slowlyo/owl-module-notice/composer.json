@@ -1,0 +1,32 @@
+{
+    "name": "slowlyo/owl-module-notice",
+    "alias": "通知公告管理",
+    "description": "OwlAdmin 扩展: 后台功能-通知公告管理",
+    "type": "library",
+    "keywords": ["owl-admin", "extension", "notice"],
+    "homepage": "https://gitee.com/slowlyo/notice",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "slowlyo",
+            "email": "slowlyo_email@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "slowlyo/owl-admin": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Slowlyo\\Notice\\": "src/"
+        }
+    },
+    "extra": {
+        "owl-admin": "Slowlyo\\Notice\\NoticeServiceProvider",
+        "laravel": {
+            "providers": [
+                "Slowlyo\\Notice\\NoticeServiceProvider"
+            ]
+        }
+    }
+}

@@ -26,7 +26,7 @@ return [
 
     'auth' => [
         // 是否开启验证码
-        'login_captcha' => true,
+        'login_captcha' => false,
         // 是否开启鉴权
         'enable'        => true,
         // 用户模型

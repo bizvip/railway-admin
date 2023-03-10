@@ -1,0 +1,35 @@
+{
+    "name": "slowlyo/owl-login-guard",
+    "alias": "登录保护",
+    "description": "OwlAdmin扩展: 增加登录保护功能",
+    "type": "library",
+    "keywords": [
+        "owl-admin",
+        "extension"
+    ],
+    "homepage": "https://gitee.com/slowlyo/owl-login-guard",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "slowlyo",
+            "email": "slowlyo_email@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "slowlyo/owl-admin": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Slowlyo\\OwlLoginGuard\\": "src/"
+        }
+    },
+    "extra": {
+        "owl-admin": "Slowlyo\\OwlLoginGuard\\OwlLoginGuardServiceProvider",
+        "laravel": {
+            "providers": [
+                "Slowlyo\\OwlLoginGuard\\OwlLoginGuardServiceProvider"
+            ]
+        }
+    }
+}
